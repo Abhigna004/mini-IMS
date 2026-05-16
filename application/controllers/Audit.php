@@ -2,7 +2,7 @@
 defined('BASEPATH') or exit('');
 
 /**
- * Description of Home
+ * Description of Audit
  *
  * @author Amir <amirsanni@gmail.com>
  * @date 20th Rab. Awwal, 1437AH
