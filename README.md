@@ -29,10 +29,3 @@ To log in:
 
 - Email: demo@1410inc.xyz
 - Password: demopass
-
-
-
-# New Version
-A new version is under development and can be checked at https://inventory.1410inc.xyz/
-
-You can create an account for testing purpose.
