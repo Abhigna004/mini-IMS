@@ -1,0 +1,11 @@
+---
+applyTo: "frontend/src/**"
+---
+- HTTP: `import api from '../api/axiosInstance'` — never `import axios from 'axios'`
+- Auth state: `const { user } = useAuth()` from `'../hooks/useAuth'`
+- Loading state: `<div className="d-flex justify-content-center my-4"><div className="spinner-border" role="status" /></div>`
+- Error state: `<div className="alert alert-danger">{error?.message || 'An error occurred'}</div>`
+- Role guard: `{user?.role === 'Super' && <Component />}` — never `user.role` (unsafe, may be null)
+- API functions: all live in `frontend/src/api/<module>Api.js` — create this file before the page component
+- After implementing a page: add its route to `frontend/src/routes/AppRoutes.jsx`
+- React Query client: available via `useQueryClient()` for cache invalidation after mutations
