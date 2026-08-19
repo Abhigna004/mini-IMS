@@ -29,11 +29,10 @@
   },
   "jest": {
     "transform": {},
-    "extensionsToTreatAsEsm": [".js"],
-    "moduleNameMapper": {
-      "^(\\.{1,2}/.*)\\.js$": "$1"
-    },
+    "moduleFileExtensions": ["js", "mjs", "json"],
     "testEnvironment": "node",
-    "testMatch": ["**/tests/**/*.test.js"]
+    "testMatch": ["**/tests/**/*.test.js"],
+    "resolver": "<rootDir>/jest.resolver.cjs",
+    "setupFiles": ["<rootDir>/jest.setup.js"]
   }
 }
